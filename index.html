@@ -35,6 +35,7 @@
             }, () => {
                console.log('Player is ready to use!');
                // Play stream
+                player.setup({responsive: true});
                player.src(PLAYBACK_URL);
             });
         })();
